@@ -1,0 +1,356 @@
+
+:root {
+    --color-primary: #00B6D6;
+    --font-family-primary: 'Orbitron', sans-serif;
+    --font-family-secondary:'Montserrat', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding-top: 70px;
+    font-size: 100%;
+    font-family: var(--font-family-primary);
+    color:white
+}
+section {
+    scroll-margin-top: 100px; 
+}
+
+/* Barra de nav */
+.text-me{
+    border-radius: .5rem;
+    padding: 0 1.1rem  ;
+    background-color: var(--color-primary);
+    border: thin solid transparent;
+    transition: background-color .5s linear;
+}
+.text-me:hover{
+    background-color: inherit;
+    border: thin solid var(--color-primary);
+}
+.active-text-me{
+    color: var(--color-primary); /* Ajusta al color deseado */
+    font-weight: 700;
+}
+
+
+.nav-link {
+    color:#ffffff;
+}
+
+.nav-link:focus,
+.nav-link:active,
+.nav-link.selected {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+
+.nav-item.text-me .nav-link:focus {/* Excluir los enlaces dentro de li con la clase text-me */
+    color:white;
+    font-weight: 700; 
+}
+.nav-link:hover{
+    color:var(--color-primary);
+}
+
+
+
+
+/* seccion principal */
+.main-section{
+    height: 100vh;
+}
+h3{
+    text-shadow: -3px -2px 2px #ff0000;
+}
+h4{
+    text-shadow: -2px -2px 2px var(--color-primary);
+    letter-spacing: .1rem;
+}
+h5{
+    text-shadow: -1px -1px 2px #ff0000;
+}
+
+.typewriter {
+    overflow: hidden; /* Oculta el contenido que sobrepasa el contenedor */
+    white-space: nowrap; /* Evita que el texto se mueva a la siguiente línea */
+    border-right: 0.15em solid black; /* Crea el efecto de cursor */
+}
+  
+.animation-write {
+    display: inline-block;
+    animation: typing 15s steps(30, end) 1s 5 alternate, blink-caret 0.5s step-end infinite;
+}
+  
+@keyframes typing {
+    from { width: 0; }
+    to { width: 19ch; }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+  
+
+
+
+
+
+/* seccion de habilidades */
+.card-skills,
+.card-projects {
+    box-shadow: 3px 3px 0px var(--color-primary); 
+    border: none;
+    border-radius: 10px;
+    background-color: #333; 
+    color: white;
+    transition: box-shadow 0.3s linear;
+}
+.card-body {
+    padding: 20px;
+}
+.card-skills:hover{
+    box-shadow: 0px 0px 8px var(--color-primary); 
+    cursor: pointer;
+}
+
+
+
+
+/* Secion de proyectos */
+.btn-github{
+    border: thin solid var(--color-primary);
+    color: var(--color-primary);
+}
+.btn-github:hover{
+    background-color: var(--color-primary);
+}
+.card-projects{
+    box-shadow: 0px 0px 4px var(--color-primary); 
+    transition: all ease .5;
+    transition: box-shadow ease .5s, transform ease .5s; 
+    
+}
+.card-projects:hover{
+    box-shadow: 0px 0px 10px var(--color-primary); 
+    transform: scale(1.01);
+}
+
+
+
+
+/* secion de educaion */
+.scroll-container {/* Contenedor que limita el scroll */
+    width: 100%;
+    overflow: hidden; 
+    position: relative;
+}
+.scroll-content {
+    display: flex;
+    gap: 30px; 
+    animation: scrollAnimation 25s linear infinite alternate 
+}
+@media (max-width: 575.98px) {
+    .scroll-content {
+        animation: scrollAnimation 15s linear infinite alternate /* Animación continua */
+    }
+}
+@keyframes scrollAnimation {/* Animación de movimiento continuo */
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+.scroll-container:hover .scroll-content {/* Pausar la animación al hacer hover */
+    animation-play-state: paused;
+}
+
+
+
+
+
+/* Seccion de sobre mi */
+
+
+.skill-container {
+    /* background: #1e1e2f; */
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+}
+
+.skill {
+    background: #2a2a3d; /* Fondo para cada habilidad */
+    padding:10px 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar texto */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para efectos de hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    cursor: pointer;
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+.skill h6 {
+    margin: 0; /* Eliminar margen */
+    color: #ffffff; /* Color del texto */
+}
+
+.skill i {
+    font-size: 1.5rem; /* Tamaño del ícono */
+    margin-bottom: 0.5rem; /* Espaciado debajo del ícono */
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animación de escribir */
+@keyframes typing-1 {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 19ch; /* Ajusta al número de caracteres en "Frontend Developer" */
+    }
+}
+/* Animación de parpadeo del cursor */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+
+/* Seccionde contacto */
+.border-form{
+    border:  1px solid var(--color-primary);
+    box-shadow: 0 0 5px var(--color-primary);
+}
+.style-input{
+    background-color: inherit;
+    box-shadow: 0 0 2px var(--color-primary);
+    color: whitesmoke;
+    
+}
+.style-input::placeholder{
+    color: whitesmoke;
+    font-size: .7rem;
+}
+.style-input:focus{
+    background-color: inherit;
+    border: none;
+    box-shadow: 0 0 5px var(--color-primary);
+    color: white;
+}
+.btn-send {
+    background-color: var(--color-primary);
+    color: white; 
+    transition: background-color .6s ease, color 0.3s ease; /* Duración y propiedades a animar */
+}
+
+.btn-send:hover {
+    background-color: inherit;
+    border: thin solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+
+
+/* Footer */
+.footer{
+    background-color: #333;
+}
+.github, 
+.linkedin{
+    color: white;
+    transition: color 0.3s;
+}
+.linkedin:hover {
+    color: #0077B5;
+}
+.github:hover {
+    color: #FF9800;
+}
+
+
+
+
+/* clases utilitarias */
+.text-color{
+    color:var(--color-primary);
+}
+.text-justify{
+    text-align: justify;
+}
+.font-secondary{
+    font-family: var(--font-family-secondary);
+    letter-spacing: .1rem;   
+}
+.font-primary{
+    font-family: var(--font-family-primary);
+    letter-spacing: .1rem; 
+}
+
+
+/* colores de iconos */
+.icon-html {
+    color: #E34F26; /* HTML */
+}
+
+.icon-css {
+    color: #1572B6; /* CSS */
+}
+
+.icon-js {
+    color: #F7DF1E; /* JavaScript */
+}
+
+.icon-node {
+    color: #339933; /* Node.js */
+}
+
+.icon-angular {
+    color: #DD0031; /* Angular */
+}
+
+.icon-react {
+    color: #61DAFB; /* React */
+}
+
+.icon-sql {
+    color: #00758F; /* SQL */
+}
+.icon-git {
+    color: #F05032; /* Git */
+}
+
+.icon-bootstrap {
+    color: #7952B3; /* Bootstrap */
+}
+
+
+

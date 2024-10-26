@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mi Portafolio | Iván Pacheco</title>
+
+  <!-- Link de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- LINK DE FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="bg-dark ">
+  
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top p-0 bg-dark border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand py-2 ms-5" href="#">
+          <img src="img/logo.png" alt="Logo" class="d-inline-block align-text-top img-fluid" style="max-height: 70px" />
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="">
+            <i class="fas fa-stream text-white"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0   ">
+            <li class="nav-item me-5  text-center">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+
+            <li class="nav-item me-4 text-center">
+              <a class="nav-link" href="#skills" >Habilidades</a>
+            </li>
+
+            <li class="nav-item me-4 text-center">
+              <a class="nav-link" href="#project">Proyectos</a>
+            </li>
+
+            <li class="nav-item me-4 text-center">
+              <a class="nav-link" href="#education">Formación</a>
+            </li>
+
+            <li class="nav-item me-4 text-center">
+              <a class="nav-link" href="#about-me">Sobre Mí</a>
+            </li>
+
+            <li class="nav-item text-me text-center">
+              <a class="nav-link" href="#contac-me">Escríbeme</a>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Seccion principal -->
+  <section class="main-section p-4 d-flex align-items-center justify-content-center">
+    <div class="row justify-content-center">
+      <div class="row col-lg-12 col-md-12 col-s rounded text-center">
+        <!-- <a class="navbar-brand p-0" href="#">
+                    <img src="img/hero-img.jpeg" alt="Logo" class="d-inline-block align-text-top img-fluid rounded-circle" style="max-height: 230px;">
+                </a> -->
+        <div class="col-lg-4 col-md-4 d-flex align-items-center justify-content-center">
+          <a class="navbar-brand p-0 col-12" href="#">
+            <img src="img/hero-img.jpeg" alt="Logo" class="d-inline-block align-text-top img-fluid rounded-circle"
+              style="width: 330px; height: 330px; object-fit: cover" />
+          </a>
+        </div>
+
+        <div class="col-lg-8 col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <h2 class="col-12 fs-1 bg-">
+            Hola, soy <span class="text-color">Iván Pacheco</span>
+          </h2>
+          <div class="typewriter">
+            <h3 class="col-12 fs-1 animation-write">Desarrollador Front-End</h3>
+          </div>
+
+          <p class="col-lg-10 font-secondary fst-italic fs- mt-3 bg-">
+            Me encanta enfrentar desafíos y encontrar soluciones creativas que
+            optimicen tanto el rendimiento como la estética del diseño
+          </p>
+
+          <div class="navbar-nav">
+            <li class="nav-item text-me">
+              <a class="nav-link" href="#contac-me">Escríbeme</a>
+            </li>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion de habilidades -->
+  <section class="mt-5" id="skills">
+    <div class="container text-center">
+      <h4 class="fs-3">Habilidades</h4>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center pb-5 border-bottom">
+        <!-- Tarjeta de HTML -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fab fa-html5 fs-1 icon-html"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">HTML</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de CSS -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fab fa-css3-alt fs-1 icon-css"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">CSS</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Bootstrap -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fab fa-bootstrap fs-1 icon-bootstrap"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">
+                Bootstrap
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de JavaScript -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fab fa-js-square fs-1 icon-js"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">
+                JavaScript
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Node.js -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fab fa-node fs-1 icon-node"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">Node.js</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Angular -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fab fa-angular fs-1 icon-angular"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">Angular</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de React -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fab fa-react fs-1 icon-react"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">React</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de SQL -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fas fa-database fs-1 icon-sql"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">SQL</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Git -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <i class="fab fa-git-alt fs-1 icon-git"></i>
+              <h5 class="card-title mt-2 font-secondary fw-bold">Git</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Seccion de proyectos -->
+  <section class="mt-5 row justify-content-center" id="project">
+    <div class="container text-center  mb-3">
+      <h4 class="fs-3">Proyectos</h4>
+    </div>
+
+    <div class="col-lg-11 col-md-11 col-sm-9 mb-4 p-5 border rounded-5">
+
+      <div class="">
+        <!-- Proyecto N°1 -->
+        <h6 class="mt-2 mb-4">Proyecto N°1</h6>
+        <div class="card card-projects h-100">
+          <div class="row g-0">
+            <!-- Columna para la imagen -->
+            <div class="col-xl-8 col-lg-12 col-md-12">
+              <a href="https://challenge-one-ten.vercel.app/" target="_blank">
+                <img src="img/project-alura-encryp.png" class="card-img" alt="Descripción de la imagen"
+                  style="object-fit: cover; height: 100%" /></a>
+            </div>
+            <!-- Columna para el contenido -->
+            <div class="col-xl-4 col-lg-12 col-md-12 d-flex">
+              <div class="card-body d-flex flex-column justify-content-between bg-daner">
+                <h5 class="card-title fw-bold text-center mt-3">
+                  Encriptador de Texto
+                </h5>
+                <p class="card-text font-secondary fs-6 bg-ino">
+                  Es una aplicación web que permite
+                  <b>cifrar y descifrar</b> mensajes mediante un sistema de
+                  sustitución de vocales. <br /><br />Desarrollada con
+                  <b>HTML, CSS y Js</b>, ofrece una manera rápida de proteger
+                  la privacidad de tus comunicaciones
+                </p>
+
+                <div class="d-flex justify-content-end gap-3 bg-waring">
+                  <a href="https://github.com/ivandapacheco/challenge-one" target="_blank" class="btn btn-github">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <a href="https://challenge-one-ten.vercel.app/" target="_blank" class="btn btn-secondary">Ver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <!-- Proyecto N°2 -->
+        <h6 class="mt-2 mb-4">Proyecto N°2</h6>
+        <div class="card card-projects h-100">
+          <div class="row g-0">
+            <!-- Columna para la imagen -->
+            <div class="col-xl-8 col-lg-12 col-md-12">
+              <a href="https://challenge-one-ten.vercel.app/" target="_blank">
+                <img src="img/project-tables.png" class="card-img" alt="Descripción de la imagen"
+                  style="object-fit: cover; height: 100%" /></a>
+            </div>
+            <!-- Columna para el contenido -->
+            <div class="col-xl-4 col-lg-12 col-md-12 d-flex">
+              <div class="card-body d-flex flex-column justify-content-between bg-daner">
+                <h5 class="card-title fw-bold text-center mt-3">
+                  Diseño y Desarrollo de Tablas con Angular
+                </h5>
+                <p class="card-text font-secondary fs-6 bg-ino">
+                  Diseñé y desarrollé tablas con CRUD completo para la gestión de datos <b>consumiendo APIs</b> para
+                  interactuar con bases de datos. <br><br> Utilicé <b>Angular</b>
+                  y <b>consumí APIs</b> para realizar operaciones sobre los datos. Usé
+                  <b>Bootstrap</b> para un diseño limpio, moderno y responsivo.
+                </p>
+
+                <div class="d-flex justify-content-end gap-3 bg-waring">
+                  <a href="https://github.com/ivandapacheco/challenge-one" target="_blank" class="btn btn-github">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <a href="https://challenge-one-ten.vercel.app/" target="_blank" class="btn btn-secondary">Ver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Seccion de Formación -->
+  <section class="container mt-5" id="education">
+    <div class="container text-center mt-5 mb-3">
+      <h4 class="fs-3 my-5">Formación</h4>
+    </div>
+
+    <div class="scroll-container">
+      <div class="scroll-content d-flex">
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4 ms-5">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Lógica de Programación con JavaScript</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logoUDC.png" alt="Logo Institución" class="img-fluid mb-2 " style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Ingeniería de Software</h6>
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">IA Generativa en Front-End</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logoSena.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Inglés Básico para Profesionales</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Control de Versiones con Git y GitHub</h6>
+        </div>
+
+
+
+        <!-- Adicioanles -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Lógica de Programación con JavaScript</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logoUDC.png" alt="Logo Institución" class="img-fluid mb-2 " style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Ingeniería de Software</h6>
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">IA Generativa en Front-End</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logoSena.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Inglés Básico para Profesionales</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Control de Versiones con Git y GitHub</h6>
+        </div>
+
+        <!-- Adicionales para escritorio -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Lógica de Programación con JavaScript</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logoUDC.png" alt="Logo Institución" class="img-fluid mb-2 " style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Ingeniería de Software</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">IA Generativa en Front-End</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logoSena.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Inglés Básico para Profesionales</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-8 mb-4">
+          <div class="card card-skills">
+            <div class="card-body text-center">
+              <!-- Aquí se inserta el logo de la institución -->
+              <img src="img/logo-alura.png" alt="Logo Institución" class="img-fluid mb-2" style="height: 100px;">
+            </div>
+          </div>
+          <h6 class="card-title font-secondary fw-bold mt-3 text-center">Control de Versiones con Git y GitHub</h6>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+  <!-- Section SOBRE MI -->
+  <section class="container mt-5 " id="about-me">
+    <div class="container text-center mt-5 mb-3">
+      <h4 class="fs-3 my-5">Sobre mí</h4>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-5">
+       
+        <p class="font-secondary lh-lg text-justify">
+          Soy un estudiante de Ingeniería de Software <b>apasionado por el desarrollo front-end</b>, especialmente con Angular.
+        </p>
+
+        <p class="font-secondary lh-lg text-justify"> Actualmente, estoy trabajando en un proyecto donde he creado formularios, implementado validaciones y consumido APIs.</p>
+      
+        <p class="font-secondary lh-lg text-justify">
+          Mi enfoque va más allá de lo técnico; valoro el desarrollo de relaciones positivas y el trabajo colaborativo. 
+        </p>
+
+        <p class="font-secondary lh-lg text-justify">
+          Disfruto motivar y apoyar a mis compañeros, y tengo una verdadera <b>pasión por enseñar y compartir conocimientos</b>, así como por enfrentar desafíos de manera creativa.
+        </p>
+
+      </div>
+
+      <div class="col-lg-7 rounded-3  ">
+        <div class="col-lg-12 rounded-3  skill-container  ">
+          <h5 class="text-center">Habilidades Interpersonales</h5>
+          
+          <div class="row mt-3">
+              <div class="col-6 mb-4">
+                  <div class="skill">
+                      <h6><i class="fas fa-heart"></i> Empatía</h6>
+                  </div>
+              </div>
+              <div class="col-6 mb-4">
+                  <div class="skill">
+                      <h6><i class="fas fa-users"></i> Liderazgo</h6>
+                  </div>
+              </div>
+              <div class="col-6 mb-4">
+                  <div class="skill">
+                      <h6><i class="fas fa-clock"></i> Paciencia</h6>
+                  </div>
+              </div>
+              <div class="col-6 mb-4">
+                  <div class="skill">
+                      <h6><i class="fas fa-chalkboard-teacher"></i> Enseñanza</h6>
+                  </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="skill ">
+                    <h6><i class="fas fa-comments"></i> Comunicación</h6>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                  <div class="skill">
+                      <h6><i class="fas fa-users"></i> Trabajo en equipo</h6>
+                  </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="skill">
+                    <h6><i class="fas fa-heart"></i> Inteligencia emocional</h6>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="skill">
+                    <h6><i class="fas fa-rocket"></i> Pensamiento estratégico</h6>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Section Contacme -->
+  <section class="row p-3 mt-5" id="contac-me">
+
+    <div class="col-lg-6 col-md-6 contact-section">
+      <div class="container">
+        <h4 class="text-center my-3">Contáctame</h4>
+        <form action="mailto:ivanda.pacheco@example.com" method="post" enctype="text/plain"
+          class="col-11 col-lg-12 mx-auto p-4 rounded-3  border-form">
+          <div class="row ">
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="form-group mb-3 ">
+                <input type="text" class="form-control form-control-sm style-input " placeholder="Nombre" required>
+              </div>
+              <div class="form-group mb-3">
+                <input type="email" class="form-control form-control-sm style-input" placeholder="Correo electrónico" required>
+              </div>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control form-control-sm style-input" placeholder="Asunto" required>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="form-group mb-3">
+                <textarea class="form-control form-control-sm style-input" rows="6" placeholder="Mensaje" required></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-send">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 container text-center justify-content-center align-items-center d-flex p-2 mt-5">
+      <blockquote class="blockquote text-center  ">
+        <p class="mb-0 fst-italic">"El código es como la poesía: hay que encontrar la belleza en la simplicidad."</p>
+        <footer class="blockquote-footer mt-2 text-secondary">Ivanda Pacheco</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  
+  <!-- Seccion del footer -->
+  <footer class="footer p-1 pb-3 mt-4 text-center" id="footer">
+
+      <p class="font-secondary mt-5">&copy; 2024 Todos los derechos reservados | Desarrollado por: <a
+          class="fw-bold text-color" href="">Ivanda Pacheco</a>
+      </p>
+
+      <ul class="list-inline text-center m-0">
+
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/ivanda-pacheco/" target="_blank" class="text-decoration-none linkedin">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item ">
+          <a href="https://github.com/ivandapacheco" target="_blank" class="text-decoration-none  github">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    <!-- </div> -->
+    
+  </footer>
+
+
+  <script>
+    // Selecciona todos los enlaces de navegación
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        // Verifica si el enlace está dentro de un <li> con clase 'text-me'
+        if (link.parentElement.classList.contains('text-me')) {
+          link.classList.add('active-text-me');
+          return; // Salta el enlace si pertenece a 'text-me'
+        }
+        
+        // Quita la clase 'selected' de todos los enlaces
+        navLinks.forEach(link => link.classList.remove('selected'));
+        
+        // Añade la clase 'selected' al enlace que fue clickeado
+        this.classList.add('selected');
+      });
+    });
+
+
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    //     const navbarCollapse = document.getElementById('navbar');
+
+    //     navLinks.forEach(link => {
+    //         link.addEventListener('click', () => {
+    //             const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+    //                 toggle: false
+    //             });
+    //             bsCollapse.hide();
+    //         });
+    //     });
+    // });
+
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    //     const navbarCollapse = document.getElementById('navbar');
+
+    //     navLinks.forEach(link => {
+    //         link.addEventListener('click', () => {
+    //             // Retraso de 0.5 segundos antes de cerrar el menú
+    //             setTimeout(() => {
+    //                 const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+    //                     toggle: false
+    //                 });
+    //                 bsCollapse.hide();
+    //             }, 500); // 500 milisegundos de delay
+    //         });
+    //     });
+    // });
+    $(document).ready(function() {
+        // Cerrar el colapso al hacer clic en un enlace
+        $('.navbar-nav .nav-link').click(function() {
+            // Si el colapso está abierto, ciérralo
+            var $collapse = $('#navbar');
+            if ($collapse.hasClass('show')) {
+                $collapse.collapse('hide');
+            }
+        });
+    });
+
+  </script>
+
+</body>
+
+</html>
